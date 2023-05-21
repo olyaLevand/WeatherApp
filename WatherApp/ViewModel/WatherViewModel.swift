@@ -114,7 +114,6 @@ extension WeatherViewModel: CLLocationManagerDelegate {
         self.loader = false
         self.showError = true
         self.error = "Error, Can't fetch your location to show weather in your city"
-        // Handle failure to get a user’s location
     }
     
 }
