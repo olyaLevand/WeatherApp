@@ -11,6 +11,15 @@
 		00C199E12A1536F800732115 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C199E02A1536F800732115 /* ContentView.swift */; };
 		00C199E32A1536F900732115 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C199E22A1536F900732115 /* Assets.xcassets */; };
 		00C199E72A1536F900732115 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C199E62A1536F900732115 /* Preview Assets.xcassets */; };
+		00C199F12A15373D00732115 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C199F02A15373D00732115 /* WeatherService.swift */; };
+		00C199F42A153EE600732115 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 00C199F32A153EE600732115 /* Alamofire */; };
+		00C199F62A153F7A00732115 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C199F52A153F7A00732115 /* NetworkError.swift */; };
+		00C199F82A19160F00732115 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C199F72A19160F00732115 /* LocationService.swift */; };
+		00C199FB2A1A5D7D00732115 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C199FA2A1A5D7D00732115 /* WeatherCell.swift */; };
+		00C199FD2A1A5DFE00732115 /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C199FC2A1A5DFE00732115 /* WeatherResponse.swift */; };
+		00C19A012A1A6BF900732115 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C19A002A1A6BF900732115 /* WeatherView.swift */; };
+		00C19A032A1A6CAB00732115 /* WatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C19A022A1A6CAB00732115 /* WatherViewModel.swift */; };
+		00C19A0A2A1AA7FF00732115 /* AlertToast in Frameworks */ = {isa = PBXBuildFile; productRef = 00C19A092A1AA7FF00732115 /* AlertToast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +29,14 @@
 		00C199E22A1536F900732115 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00C199E42A1536F900732115 /* WatherApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WatherApp.entitlements; sourceTree = "<group>"; };
 		00C199E62A1536F900732115 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		00C199F02A15373D00732115 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		00C199F52A153F7A00732115 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		00C199F72A19160F00732115 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		00C199FA2A1A5D7D00732115 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		00C199FC2A1A5DFE00732115 /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
+		00C19A002A1A6BF900732115 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		00C19A022A1A6CAB00732115 /* WatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatherViewModel.swift; sourceTree = "<group>"; };
+		00C19A042A1AA42600732115 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +44,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00C199F42A153EE600732115 /* Alamofire in Frameworks */,
+				00C19A0A2A1AA7FF00732115 /* AlertToast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +71,10 @@
 		00C199DD2A1536F800732115 /* WatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				00C19A042A1AA42600732115 /* Info.plist */,
+				00C199EF2A15371D00732115 /* ViewModel */,
+				00C199EE2A15371700732115 /* View */,
+				00C199ED2A15371000732115 /* Model */,
 				00C199DE2A1536F800732115 /* WatherAppApp.swift */,
 				00C199E02A1536F800732115 /* ContentView.swift */,
 				00C199E22A1536F900732115 /* Assets.xcassets */,
@@ -67,6 +90,42 @@
 				00C199E62A1536F900732115 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		00C199ED2A15371000732115 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				00C199F92A19162700732115 /* Services */,
+				00C199F52A153F7A00732115 /* NetworkError.swift */,
+				00C199FC2A1A5DFE00732115 /* WeatherResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		00C199EE2A15371700732115 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00C199FA2A1A5D7D00732115 /* WeatherCell.swift */,
+				00C19A002A1A6BF900732115 /* WeatherView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		00C199EF2A15371D00732115 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				00C19A022A1A6CAB00732115 /* WatherViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		00C199F92A19162700732115 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				00C199F72A19160F00732115 /* LocationService.swift */,
+				00C199F02A15373D00732115 /* WeatherService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +144,10 @@
 			dependencies = (
 			);
 			name = WatherApp;
+			packageProductDependencies = (
+				00C199F32A153EE600732115 /* Alamofire */,
+				00C19A092A1AA7FF00732115 /* AlertToast */,
+			);
 			productName = WatherApp;
 			productReference = 00C199DB2A1536F800732115 /* WatherApp.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +176,10 @@
 				Base,
 			);
 			mainGroup = 00C199D22A1536F800732115;
+			packageReferences = (
+				00C199F22A153EE600732115 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				00C19A082A1AA7FE00732115 /* XCRemoteSwiftPackageReference "AlertToast" */,
+			);
 			productRefGroup = 00C199DC2A1536F800732115 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,7 +206,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00C199FB2A1A5D7D00732115 /* WeatherCell.swift in Sources */,
+				00C19A032A1A6CAB00732115 /* WatherViewModel.swift in Sources */,
+				00C19A012A1A6BF900732115 /* WeatherView.swift in Sources */,
+				00C199FD2A1A5DFE00732115 /* WeatherResponse.swift in Sources */,
 				00C199E12A1536F800732115 /* ContentView.swift in Sources */,
+				00C199F62A153F7A00732115 /* NetworkError.swift in Sources */,
+				00C199F82A19160F00732115 /* LocationService.swift in Sources */,
+				00C199F12A15373D00732115 /* WeatherService.swift in Sources */,
 				00C199DF2A1536F800732115 /* WatherAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +343,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WatherApp/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app use your location to personalize data.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -279,7 +355,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -307,6 +383,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WatherApp/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app use your location to personalize data.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -317,7 +395,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.3;
@@ -354,6 +432,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		00C199F22A153EE600732115 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		00C19A082A1AA7FE00732115 /* XCRemoteSwiftPackageReference "AlertToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/elai950/AlertToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		00C199F32A153EE600732115 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00C199F22A153EE600732115 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		00C19A092A1AA7FF00732115 /* AlertToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00C19A082A1AA7FE00732115 /* XCRemoteSwiftPackageReference "AlertToast" */;
+			productName = AlertToast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 00C199D32A1536F800732115 /* Project object */;
 }
