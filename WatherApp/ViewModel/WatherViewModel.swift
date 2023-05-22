@@ -50,6 +50,9 @@ class WeatherViewModel: NSObject, ObservableObject {
     
     func updateWeather(address: String){
         self.loader = true
+        self.currentLocation = address
+        self.weathers = []
+
         getCoordinate(addressString: address, completionHandler: { [weak self] coord, error in
             if error == nil{
                 self?.fetchWeather(lat: String(coord.latitude), lon: String(coord.longitude))
