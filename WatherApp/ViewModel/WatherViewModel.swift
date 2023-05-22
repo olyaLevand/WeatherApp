@@ -11,7 +11,7 @@ import CoreLocation
 
 class WeatherViewModel: NSObject, ObservableObject {
     
-    @Published var weathers: [WeatherItem] = []
+    @Published var weathers: [WeatherGeneralData] = []
     @Published var currentLocation = ""
     @Published var showError = false
     @Published var loader: Bool

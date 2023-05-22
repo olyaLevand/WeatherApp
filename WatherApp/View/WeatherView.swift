@@ -17,43 +17,35 @@ struct WeatherView: View {
     
     var body: some View {
         VStack{
-            HStack{
-                TextField(placeholderText, text: $address)
-                    .padding(5)
-                    .cornerRadius(10)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 10)
-                            .stroke(.gray, lineWidth: 1)
-                    )
+            NavigationStack{
+                HStack{
+                    TextField(placeholderText, text: $address)
+                        .padding(5)
+                        .cornerRadius(10)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(.gray, lineWidth: 1)
+                        )
+                    Button("Search"){
+                        viewModel.updateWeather(address: address)
+                    }.padding(8)
+                        .foregroundColor(.white)
+                        .background(.blue)
+                        .cornerRadius(10)
+                }.padding()
                 
-                Button("Search"){
-                    viewModel.updateWeather(address: address)
-                }.padding(8)
-                    .foregroundColor(.white)
-                    .background(.blue)
-                    .cornerRadius(10)
-            }.padding()
-            
-            Text("Location: \(viewModel.currentLocation)")
-                .font(.title)
-            
-            VStack{
-                List{
-                    ForEach(viewModel.weathers, id: \.self){ cellData in
-                        if cellData == viewModel.weathers.first{
-                            HStack{
-                                Spacer()
-                                HStack{
-                                    Text("Time")
-                                    Text("(month.day hour:minute)")
-                                        .font(.footnote)
-                                }
-                                Spacer()
-                                Text("Weather")
-                                Spacer()
+                Text("Location: \(viewModel.currentLocation)")
+                    .font(.title3)
+                
+                VStack{
+                    List{
+                        ForEach(viewModel.weathers, id: \.self){ weather in 
+                            NavigationLink {
+                                WeatherDetailView(weather: weather, location: viewModel.currentLocation)
+                            } label: {
+                                WeatherCell(dateStr: weather.dateStr, averageTemp: weather.averageTemp)
                             }
                         }
-                        WeatherCell(data: cellData)
                     }
                 }
             }

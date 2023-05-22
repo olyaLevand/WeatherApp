@@ -20,5 +20,98 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A6688D5B-1278-4A16-8AF6-ADFC9FBD4353"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "WatherApp/Model/Services/WeatherService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "processWeathers(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A6688D5B-1278-4A16-8AF6-ADFC9FBD4353 - 35fdb07112a43c39"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WatherApp.WeatherService.processWeathers(Swift.Array&lt;WatherApp.WeatherItem&gt;) -&gt; Swift.Array&lt;WatherApp.WeatherGeneralData&gt;"
+                  moduleName = "WatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olyalevandivska/Desktop/WatherApp/WatherApp/Model/Services/WeatherService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "2916">
+               </Location>
+               <Location
+                  uuid = "A6688D5B-1278-4A16-8AF6-ADFC9FBD4353 - 35fdb07112a43c39"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WatherApp.WeatherService.processWeathers(Swift.Array&lt;WatherApp.WeatherItem&gt;) -&gt; Swift.Array&lt;WatherApp.WeatherGeneralData&gt;"
+                  moduleName = "WatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olyalevandivska/Desktop/WatherApp/WatherApp/Model/Services/WeatherService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "3088">
+               </Location>
+               <Location
+                  uuid = "A6688D5B-1278-4A16-8AF6-ADFC9FBD4353 - df75394618643842"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #4 (WatherApp.WeatherItem) -&gt; Swift.Bool in WatherApp.WeatherService.processWeathers(Swift.Array&lt;WatherApp.WeatherItem&gt;) -&gt; Swift.Array&lt;WatherApp.WeatherGeneralData&gt;"
+                  moduleName = "WatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olyalevandivska/Desktop/WatherApp/WatherApp/Model/Services/WeatherService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "A6688D5B-1278-4A16-8AF6-ADFC9FBD4353 - 35fdb07112a43c39"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WatherApp.WeatherService.processWeathers(Swift.Array&lt;WatherApp.WeatherItem&gt;) -&gt; Swift.Array&lt;WatherApp.WeatherGeneralData&gt;"
+                  moduleName = "WatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olyalevandivska/Desktop/WatherApp/WatherApp/Model/Services/WeatherService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "2364">
+               </Location>
+               <Location
+                  uuid = "A6688D5B-1278-4A16-8AF6-ADFC9FBD4353 - 35fdb07112a43c39"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "WatherApp.WeatherService.processWeathers(Swift.Array&lt;WatherApp.WeatherItem&gt;) -&gt; Swift.Array&lt;WatherApp.WeatherGeneralData&gt;"
+                  moduleName = "WatherApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/olyalevandivska/Desktop/WatherApp/WatherApp/Model/Services/WeatherService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "71"
+                  endingLineNumber = "71"
+                  offsetFromSymbolStart = "2484">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
